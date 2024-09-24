@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    align-content: center;
+}
+
+body {
+    font-family: 'Droid Sans',sans-serif;
+    /* font-size: 16px; */
+    color: #292929;
+    font-weight: 100;
+    background: #fff;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 33%;
+    border: solid white;
+    border-radius: 50px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start of the container */
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: #370617;
+    z-index: 0;
+    width: auto; /* Allow the navbar to occupy only the necessary width */
+    padding-right: 20px; /* Add padding to the right side */
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    padding: 10px 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #FFF5E4;
+    font-size: 10px;
+}
+
+.nav-list li a:hover {
+    color: #e85d04;
+}
+
+.rightNav {
+    margin-left: auto; /* Push the rightNav to the end of the flex container */
+    padding: 0 4px;
+    text-align: right;
+}
+
+
+
+.search{
+    display: flex;
+    justify-content: center;
+    padding: 10px 506px 10px 0px ;
+    align-items: center;
+
+}
+
+.group{
+    padding-left: 10px;
+}
+
+.stock{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    width: 960px;
+    border-radius: 35px;
+    height: 35px;
+}
+th, td {
+    border:0.5px solid black;
+    padding: 10px 10px;
+    background-color: red;
+    padding-left: 15px;
+    padding-right: 70px;
+    color: #fff;
+    
+}
+
+table{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+button{
+    color: rgb(224, 223, 223);
+    background-color: rgb(175, 33, 33);
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+    padding: 5px 5px;
+}
