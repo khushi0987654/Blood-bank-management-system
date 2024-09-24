@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us | Blood Bank</title>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            line-height: 1.6;
+        }
+
+        .contact-container {
+            width: 100%;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-wrapper {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .contact-info {
+            flex: 1;
+            background-color: #a52a2a;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info .social-icons {
+            margin-top: 30px;
+        }
+
+        .contact-info .social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info .social-icons a:hover {
+            color: #f4f7f6;
+        }
+
+        .contact-form {
+            flex: 2;
+            padding: 40px 30px;
+        }
+
+        .contact-form h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-form .input-box {
+            margin-bottom: 20px;
+        }
+
+        .contact-form .input-box input,
+        .contact-form .input-box textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form .input-box textarea {
+            min-height: 150px;
+            resize: none;
+        }
+
+        .contact-form button {
+            background-color: #a52a2a;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #cc4d4d;
+        }
+
+        .thank-you-message {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+
+            .contact-info {
+                padding: 30px;
+            }
+
+            .contact-form {
+                padding: 30px;
+            }
+
+            .contact-info h2 {
+                font-size: 24px;
+            }
+
+            .contact-form h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="contact-container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Helping Hands Blood Bank</p>
+                <p>Email: contact@bloodbank.com</p>
+                <p>Phone: +91 1234567890</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="contactForm">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-box">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+                    Thank you for contacting us!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Hide the form and show the thank-you message
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
+
