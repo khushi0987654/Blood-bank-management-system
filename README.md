@@ -23,10 +23,11 @@ Install dependencies
 Start the server
 
   npm run start
+
 Demo
-Insert gif or link to demo
 ![Screenshot (39)](https://github.com/user-attachments/assets/e321cd4a-6a18-4dec-8b35-954b021b6e19)
 
-http://127.0.0.1:5500/blood.html
+
+
 
 
